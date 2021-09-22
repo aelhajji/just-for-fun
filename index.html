@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allo my star</title>
+</head>
+<style>
+    body {
+        display: flex;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .star-card {
+        width: 600px;
+        height: 400px;
+    }
+
+    .img-per {
+        width: 100%;
+        height: 266px;
+        border-radius: 8px;
+
+    }
+
+    .mute {
+        font-size: 30px;
+        color: white;
+        margin-left: auto;
+        /* left: 0; */
+    }
+
+    .img-per-input {
+        color: blanchedalmond;
+        font-size: 40px;
+
+    }
+
+    .img-staar {
+        margin: 0;
+        width: 30%;
+        border-radius: 4px;
+        background-size: cover;
+        height: 100%;
+
+        background-image: url(https://m.media-amazon.com/images/M/MV5BMTM0MzM3MTg3MF5BMl5BanBnXkFtZTcwNDcwODE0Nw@@._V1_UX178_CR0,0,178,264_AL_.jpg);
+    }
+
+    .actor-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ef366c;
+    }
+
+    .verfied {
+        color: #57a4ff;
+        width: 22px;
+    }
+
+    .description {
+        --tw-text-opacity: 1;
+        color: rgba(147, 146, 146, var(--tw-text-opacity));
+        font-size: 10px;
+        /* line-height: 1.75rem; */
+        text-align: justify;
+    }
+
+    .repence-duration {
+        background-color: #ccf4dd;
+        font-size: 10px;
+        color: #42c85c;
+        border: none;
+
+    }
+
+    .some-info {
+        margin-bottom: 6px;
+        margin-top: 6px;
+        margin: 0;
+        border: none;
+        background-color: #fef0f5;
+        color: #ef366c;
+        font-size: 7px;
+    }
+
+    .demende-btn {
+        font-size: 10px;
+        border: none;
+        background-color: #ee2d6c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: white !important;
+    }
+
+    .dmndevent {
+        font-size: 10px;
+        background-color: #ee2d6d00;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+
+    @media screen and (max-width: 600px) {
+        .actor-name {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: #ef366c;
+        }
+
+        .description {
+            --tw-text-opacity: 1;
+            color: rgba(147, 146, 146, var(--tw-text-opacity));
+            font-size: 6px;
+            /* line-height: 1.75rem; */
+            text-align: justify;
+        }
+
+        .demende-btn {
+            font-size: 6px;
+            border: none;
+            background-color: #ee2d6c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white !important;
+        }
+
+        .star-card {
+            width: 340px;
+            height: 301px;
+        }
+
+        .verfied {
+            color: #57a4ff;
+            width: 18px;
+        }
+
+        .repence-duration {
+            margin-top: 3px;
+            background-color: #ccf4dd;
+            font-size: 5px;
+            color: #42c85c;
+            border: none
+        }
+
+        .some-info {
+            margin-bottom: 6px;
+            margin-top: 6px;
+            margin: 0;
+            background-color: #fef0f5;
+            color: #ef366c;
+            font-size: 7px;
+            border: none
+        }
+
+        .dmndevent {
+            font-size: px;
+            background-color: #ee2d6d00;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+        }
+    }
+</style>
+
+<body>
+    <div class="star-card  d-flex flex-row   bg-white rounded p-4 ">
+        <div style="width: 42%;" class="img-staar img-star  d-flex flex-column  justify-content-between">
+            <div>
+                <!-- by aelhajji  -->
+            </div>
+            <div class="text-center">
+                <input class="change-img" style="display: none;" id="file" type="file">
+                <label class="change-img img-per-input" for="file">
+                    <img style="filter: brightness(0) invert(1); margin: 10px;" class="play" width="40"
+                        src="imges/photo_file_49166-300x300-removebg-preview.png">
+                </label>
+            </div>
+            <div>
+                <img style=" margin: 10px;" class="play" width="20" src="imges/volume-up-4-512.png">
+            </div>
+        </div>
+        <div style="    width: 50%;
+            margin-left: 13px;" class="info-star   h-auto d-flex flex-column justify-content-between">
+            <div>
+                <h2 class="actor-name" contenteditable> bob marley <img class="verfied"
+                        src="imges/1200px-Twitter_Verified_Badge.svg.png" alt="" srcset=""></i>
+                </h2>
+                <p contenteditable class="mt-0 mb-0 description">
+                    Robert Nesta Marley dit Bob Marley, né le 6 février 1945 à Nine Miles (Jamaïque) et mort le 11
+                    mai 1981 à Miami États-Unis d'un cancer généralisé, est un auteur-compositeur-interprète et
+                    musicien jamaïcain <br> Bob Marley commence sa carrière musicale en 1962.
+                </p>
+                <span contenteditable class="btn  repence-duration"> Cette célébrité répond généralement en 7
+                    les jours</span>
+                <div>
+                    <button contenteditable class="btn some-info">chanteur</button>
+                    <button contenteditable class="btn some-info">États-Unis</button>
+                </div>
+            </div>
+            <div>
+                <div class="d-grid gap-2">
+                    <button contenteditable class="btn  p-2 demende-btn" type="button">
+                        <img src="imges/play-3-256.png" width="20" alt="" srcset="">
+                        Demandez des dédicaces 304 DH
+                    </button>
+                    <button contenteditable class="btn btn-primary p-2 dmndevent" type="button">
+                        <img src="imges/event-94-1093747.png" width="20" alt="" srcset="">
+                        Demandez des évènements ou une demande commerciale
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="SaveImg()" class="downloadd btn btn-danger mt-2 p-2 mb-2 text-center">Download(image)</button>
+    </div>
+    <!-- my js -->
+    <script src="code.js"></script>
+    <!-- botstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+
+    <!-- download js -->
+    <script src="cdn_pdf_githack.js"></script>
+    <script src="html2canvas.min.js"></script>
+</body>
+
+</html>
